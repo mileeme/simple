@@ -111,7 +111,6 @@ hr {
     }
 }
 
-
 /* -----------------
 * Grids
 ----------------- */
@@ -122,80 +121,15 @@ hr {
 * Layout
 ----------------- */
 
-.check-registration {
-    display: grid;
-    grid-template-rows: auto;
-    width: 100%;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
-    padding: 0 $padding;
-    .registration-form {
-        justify-self: center;
-        @include screen(md) {
-            max-width: 28rem;
-        }
-    }
-}
-
-#registrationInput {
-    // background-image: url('');
-    background-position: 0.65rem 0.75rem;
-    background-repeat: no-repeat;
-    background-color: $background-secondary; 
-    width: 100%;
-    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 3px $border-style $primary-color;
-    margin-bottom: 1rem;
-}
-
-#registrationUL {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    li{
-        text-align: center;
-        a {
-            border: $borders;
-            border-radius: $border-radius;
-            margin-top: -1px;
-            background-color: $button-background;
-            padding: 1rem;
-            text-decoration: none;
-            color: $button-color;
-            display: block;
-            &:hover {
-                background-color: $button-background-hover;
-            }
-        }
-
-    }
-}
 
 /* -----------------
 * Heading
 ----------------- */
-.election-description {
-    padding: 3rem 0;
-}
+
 
 /* -----------------
 * Buttons
 ----------------- */
-.candidate-response {
-    padding: 1rem 1rem;
-    margin: $margin 0;
-    background-color: $secondary-color;
-    color: $primary-color;
-}
-.candidate-response:hover {
-    // border-bottom: $borders;
-}
-
 .is-active-button {
     padding: 1rem 1rem;
     margin: $margin 0;
@@ -203,7 +137,6 @@ hr {
     color: $background;
 }
 
-// result button
 .is-disabled-button {
     display: block;
     width: 100%;
@@ -259,23 +192,6 @@ footer {
 }
 .is-true {
     background: yellow;
-}
-
-
-/* -----------------
-* Questions
------------------ */ 
-
-.is-no-response {
-    display: inline-block;
-    width: 6rem;
-    border-bottom: 2px $border-style $border-color;
-    text-decoration: none;
-}
-
-.is-response {
-    overflow: hidden;
-    text-decoration: underline;
 }
 
 
